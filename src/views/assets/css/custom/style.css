@@ -1,0 +1,48 @@
+:root {
+    --cor-fonte-cinza:#333;
+  }
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    /* background-image: linear-gradient(to bottom, #fff9ec 0, #fff 90%); */
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+.font-cinza{
+  color: var(--cor-fonte-cinza);; /* Cor da fonte mais escura */
+}
+
+.mgtop50{
+    margin-top: 50px;
+}
+
+h2{
+    font-weight:bold
+}
+
+/* Personalizar o botão */
+.btn-custom {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #1ba005 0, #0ec851 100%);
+    color: #fff;
+    font-weight:bold;
+    width: 60%;
+    margin: 0 auto;
+    transition: box-shadow 0.5s ease; /* Adiciona uma transição suave */
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+
+  .btn-custom:hover {
+    box-shadow: 8px 8px 12px rgba(0, 255, 0, 0.3);
+    color: #fff;
+  }

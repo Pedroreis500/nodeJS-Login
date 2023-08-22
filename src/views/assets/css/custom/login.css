@@ -1,0 +1,85 @@
+
+.container-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para a seção de boas-vindas */
+.welcome-section {
+    background-color: #52b4e6;
+    position: relative;
+}
+
+/* Estilo para a imagem */
+.image-container {
+    text-align: center; /* Centralize horizontalmente a imagem */
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .welcome-section {
+        display: none; /* Oculta a seção de boas-vindas em resoluções menores */
+    }
+}
+
+/* Estilo para o texto "Good to see you" */
+.image-text {
+    color: #fff;
+    font-family: lato;
+    font-size: 4.2rem;
+    left: 50%;
+    letter-spacing: .01em;
+    line-height: 1.3;
+    max-width: 54rem;
+    position: absolute;
+    top: 50%; /* Ajuste a porcentagem para posicionar o texto no meio vertical */
+    transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    width: 80%; /* Defina a largura máxima para quebrar a linha conforme necessário */
+}
+
+/* Estilo para o botão */
+.botao {
+    background-color: #4fbdf4;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 3.1rem;
+    letter-spacing: .04rem;
+    max-width: 100%;
+    min-width: 240px; /* Atualize esse valor para um valor menor */
+    outline: 0.1rem solid transparent;
+    margin-top: 1rem;
+}
+
+/* Atualize a margem do form-group para dar espaço entre os campos do formulário */
+.login-form .form-group {
+    margin-bottom: 0.75rem; /* Ajuste conforme necessário */
+}
+
+/* Atualize a largura do botão para torná-lo responsivo */
+@media (max-width: 576px) {
+    .botao {
+        min-width: 200px;
+    }
+
+    /* Centralize o conteúdo em resoluções menores */
+    .container-content {
+        flex-direction: column;
+    }
+
+    /* Centralize verticalmente o conteúdo */
+    .container-content .rounded {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
